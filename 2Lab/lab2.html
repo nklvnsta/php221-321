@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>
+        4.1. Homework: Feedback form.
+    </h1>
+    <title>2 lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>      
+        <form method="POST" action="https://httpbin.org/post">
+            <h2>
+                <legend>Feedback form</legend>
+            </h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="name" class="form-control" name="name" id="name" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+            </div>
+            <p>Leave feedback</p>
+            <div class="mb-3">
+                <textarea name="text" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-check">
+                <label for="email">Answer</label>
+                <div>
+                    <input type="checkbox" id="sms" name="sms" checked>
+                    <label for="sms">Sms</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="email" name="email">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form> 
+        <a href="lab2.php">get_headers</a>
+    </main>
+    <footer>
+        <h3>Nikolaeva Anastasia, group 221-321</h3>
+    </footer>
+
+</body>
+</html>
